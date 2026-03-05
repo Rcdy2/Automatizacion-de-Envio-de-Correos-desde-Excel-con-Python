@@ -10,12 +10,16 @@ El sistema realiza cuatro tareas principales:
 
 ## Problemática que Resuelve
 Las empresas manejan diariamente grandes volúmenes de información en archivos Excel: listados de clientes, reportes de ventas, órdenes de compra, facturación, nóminas de empleados, tickets de soporte, entre muchos otros. Esta información, almacenada en formato Excel, requiere frecuentemente ser comunicada por correo electrónico a diferentes destinatarios de manera personalizada.
+Un colaborador debe abrir el archivo Excel, acceder al correo electrónico, redactar o copiar una plantilla, buscar manualmente los datos de cada destinatario, localizar el archivo adjunto correspondiente en las carpetas del sistema, verificar la información y finalmente enviar. Este ciclo se repite tantas veces como destinatarios existan.
 
 El proceso manual tradicional presenta las siguientes limitaciones:
-- Procesos manuales ineficientes: Un colaborador debe abrir el archivo Excel, acceder al correo electrónico, redactar o copiar una plantilla, buscar manualmente los datos de cada destinatario, localizar el archivo adjunto correspondiente en las carpetas del sistema, verificar la información y finalmente enviar. Este ciclo se repite tantas veces como destinatarios existan.
-- Pérdida de tiempo operativo: Para un lote de 100 correos, este proceso manual puede consumir entre 5 y 8 horas de trabajo continuo, representando un costo operativo significativo y restando tiempo a funciones de mayor valor agregado.
-- Alta propensión a errores humanos: La naturaleza repetitiva de la tarea aumenta la probabilidad de equivocaciones como enviar información a destinatarios incorrectos, adjuntar archivos que no corresponden al cliente, omitir destinatarios o duplicar envíos, generando reclamos y afectando la imagen corporativa.
-- Falta de trazabilidad: No existe un registro automático y confiable de qué correos fueron enviados, a quién, cuándo y con qué resultado, lo que dificulta auditorías internas, la resolución de reclamos y el análisis de gestión.
+- Pérdida de tiempo operativo: Para un lote de 100 correos, este proceso manual puede consumir entre 3 y 8 horas de trabajo continuo, representando un costo operativo significativo y restando tiempo a funciones de mayor valor agregado.
+- Alta propensión a errores humanos: Tras repetitir una tarea aumenta la probabilidad de equivocaciones como:
+  - Enviar información a destinatarios incorrectos
+  - Adjuntar archivos que no corresponden al cliente
+  - Omitir destinatarios o duplicar envíos
+  - Falta de reporte de envios
+- Falta de trazabilidad: No existe un registro automático y confiable de qué correos fueron enviados, a quién, cuándo y con qué resultado, lo que dificulta auditorías internas, la resolución de posibles reclamos y el análisis de gestión.
 - Escalabilidad limitada: El modelo manual no permite aumentar el volumen de comunicaciones sin incrementar proporcionalmente el personal o las horas dedicadas a esta tarea, restringiendo el crecimiento operativo.
 
 ![](iconos_repo/DiagramaComponentes.png)
