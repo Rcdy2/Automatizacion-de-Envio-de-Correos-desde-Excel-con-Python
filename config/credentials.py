@@ -1,3 +1,4 @@
-USER_MAIL = "roccacortezdayanna@gmail.com"
-PASSWORD = "rulh rphl lkmr nkab"
-CCO_EMAILS = ['jukonoah@gmail.com']
+USER_MAIL = "ponertucorreo@gmail.com"
+PASSWORD = "contraseñadeaplicacionesdegoogle"
+
+CCO_EMAILS = ['ponerelcorreoalqueseleenviaraunacopiadeloscorreosenviados.com']
