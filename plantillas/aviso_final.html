@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #660000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        .logo-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .content {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .footer {
+            background-color: #eeeeee;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        .label {
+            font-weight: bold;
+            width: 40%;
+        }
+        .highlight {
+            color: #cc0000;
+            font-weight: bold;
+        }
+        .urgent {
+            background-color: #ffeeee;
+            padding: 10px;
+            border-left: 4px solid #cc0000;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+         <div class="logo-container">
+            <img src="cid:logo_empresa" alt="Icono Empresa">
+            <div>
+                <h2>AVISO FINAL</h2>
+                <p>{departamento}</p>
+                <p>{nombre_empresa}</p>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="urgent">
+            <p><strong>Estimado(a) {nombre_cliente},</strong></p>
+            <p>Por medio de la presente, nuestro departamento de cobranzas notifica que la obligación pendiente con nuestra institución se encuentra vencida. 
+                Este mensaje constituye un <strong>último requerimiento formal de pago</strong> previo a iniciar las acciones legales correspondientes.</p>
+        </div>
+        
+        <p>Hemos intentado comunicarnos en reiteradas ocasiones para llegar a un acuerdo respecto a la deuda pendiente. 
+            Sin embargo, al no obtener respuesta, nos vemos en la obligación de informarle que, de no regularizar su situación en los próximos días, procederemos con las siguientes acciones:</p>
+        
+        <ul>
+            <li>Reporte negativo ante centrales de riesgo crediticio (Infocorp, Sentinel).</li>
+            <li>Inicio de proceso de cobranza judicial vía proceso ejecutivo.</li>
+            <li>Inclusión de intereses legales, costas y costos del proceso.</li>
+        </ul>
+        
+        <table>
+            <tr><td class="label">Empresa/Cliente:</td><td>{empresa_cliente}</td></tr>
+            <tr><td class="label">Documento asociado:</td><td>Factura No. {numero_doc}</td></tr>
+            <tr><td class="label">Fecha de vencimiento:</td><td>{fecha_vencimiento}</td></tr>
+            <tr><td class="label">Monto total adeudado:</td><td class="highlight">S/ {monto_formateado}</td></tr>
+            <tr><td class="label">Días de mora:</td><td>{dias_mora}</td></tr>
+            <tr><td class="label">Intereses acumulados:</td><td>S/ {intereses_formateado}</td></tr>
+        </table>
+        
+        <p>Para evitar las consecuencias descritas y mantener un historial crediticio saludable, le solicitamos realizar el pago total de la deuda dentro de los próximos
+             <strong>5 días hábiles</strong> a través de nuestros canales oficiales.</p>
+        
+        <p><strong>Canales de pago habilitados:</strong><br>
+        - Plataforma web: <a href="https://{url_pagos}">{url_pagos}</a><br>
+        - Transferencia bancaria (solicitar datos al correo de cobranza)<br>
+        - Pago presencial en nuestras oficinas previa cita</p>
+        
+        <p>En el archivo adjunto encontrará el detalle de la factura, el estado de cuenta actualizado y la liquidación de intereses hasta la fecha. 
+            Una vez realizado el pago, le agradeceremos enviar el comprobante a {email_comprobantes} para registrar la cancelación en nuestro sistema.</p>
+        
+        <p>Quedamos atentos a su pronta regularización y agradecemos su atención a la presente.</p>
+        
+        <p>Atentamente,<br>
+        <strong>{departamento}</strong><br>
+        {nombre_empresa}<br>
+        Tel: {telefono}<br>
+        Email: {email_contacto}<br>
+        Horario de atención: Lunes a Viernes de 9:00 a 18:00 hrs.</p>
+    </div>
+    <div class="footer">
+        <p><strong>Nota importante:</strong> Si usted ya realizó el pago de la deuda, por favor envíe el comprobante a {email_comprobantes} para actualizar su estado en nuestro sistema 
+            y disculpe las molestias ocasionadas. Agradecemos nos indique la fecha y el monto cancelado para agilizar el proceso de regularización.</p>
+        <p>{direccion} | RUC: 20123456789</p>
+    </div>
+</body>
+</html>

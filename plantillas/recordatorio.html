@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        .logo-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .content {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .footer {
+            background-color: #eeeeee;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        .label {
+            font-weight: bold;
+            width: 40%;
+        }
+        .highlight {
+            color: #cc0000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+         <div class="logo-container">
+            <img src="cid:logo_empresa" alt="Icono Empresa">
+            <div>
+                <h2>{departamento}</h2>
+                <p>{nombre_empresa}</p>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="info-box">
+            <p>Estimado(a) <strong>{nombre_cliente}</strong>,</p>
+            <p>Reciba un cordial saludo de {nombre_empresa}. Mediante la presente, nuestro departamento de cobranzas desea recordarle amablemente que mantenemos una 
+                obligación pendiente de pago con nuestra institución, la cual se encuentra actualmente vencida.</p>
+        </div>
+        
+        <p>Valoramos la relación comercial que mantenemos con usted y entendemos que pueden presentarse situaciones imprevistas.
+             Por ello, le ofrecemos facilidades para regularizar su situación de manera oportuna y evitar que esta deuda afecte su historial crediticio o genere cargos administrativos adicionales.</p>
+        
+        <h3>Detalle de la obligación pendiente:</h3>
+        
+        <table>
+            <tr><td class="label">Razón social / Cliente:</td><td>{empresa_cliente}</td></tr>
+            <tr><td class="label">Número de documento:</td><td>Factura No. {numero_doc}</td></tr>
+            <tr><td class="label">Fecha de emisión:</td><td>{fecha_emision}</td></tr>
+            <tr><td class="label">Fecha de vencimiento original:</td><td>{fecha_vencimiento}</td></tr>
+            <tr><td class="label">Días de mora:</td><td>{dias_mora} días</td></tr>
+            <tr><td class="label">Monto facturado:</td><td>S/ {monto_factura}</td></tr>
+            <tr><td class="label">Intereses generados:</td><td>S/ {intereses_formateado}</td></tr>
+            <tr><td class="label">Saldo total pendiente:</td><td class="highlight">S/ {monto_formateado}</td></tr>
+        </table>
+        
+        <p><strong>Opciones para regularizar su situación:</strong></p>
+        
+        <ul>
+            <li><strong>Pago al contado:</strong> Realice el pago total de la deuda a través de nuestra plataforma web o transferencia bancaria.</li>
+            <li><strong>Facilidades de pago:</strong> Si requiere fraccionar la deuda, comuníquese con nosotros para evaluar un plan de pagos acorde a su capacidad financiera.</li>
+            <li><strong>Descuento por pago inmediato:</strong> Consulte por la condonación parcial de intereses si realiza el pago antes del {fecha_limite_descuento}.</li>
+        </ul>
+        
+        <p><strong>Canales de pago disponibles:</strong></p>
+        
+        <table style="border: 1px solid #ddd;">
+            <tr style="background-color: #003366; color: white;">
+                <th>Método</th>
+                <th>Instrucciones</th>
+            </tr>
+            <tr>
+                <td><strong>Web</strong></td>
+                <td><a href="https://{url_pagos}">{url_pagos}</a> (pago con tarjeta crédito/débito)</td>
+            </tr>
+            <tr>
+                <td><strong>Transferencia</strong></td>
+                <td>Solicitar datos bancarios a {email_comprobantes}</td>
+            </tr>
+            <tr>
+                <td><strong>Oficina</strong></td>
+                <td>Previa coordinación al {telefono}</td>
+            </tr>
+        </table>
+        
+        <p>En el archivo adjunto encontrará la factura detallada y el estado de cuenta actualizado con la liquidación completa. 
+            Una vez realizado el pago, le solicitamos enviar el comprobante a {email_comprobantes} para registrar la cancelación en nuestros sistemas y actualizar su estado.</p>
+        
+        <p>Agradecemos su atención y quedamos a disposición para cualquier consulta o coordinación de pago.</p>
+        
+        <p>Cordialmente,<br>
+        <strong>{departamento}</strong><br>
+        {nombre_empresa}<br>
+        Tel: {telefono} | Email: {email_contacto}<br>
+        Horario: Lunes a Viernes 9:00 - 18:00 hrs.</p>
+    </div>
+    <div class="footer">
+        <p><strong>¿Ya realizó el pago?</strong> Si canceló esta deuda con anterioridad, por favor envíe el comprobante a {email_comprobantes} indicando número de factura y fecha de pago para actualizar su estado en nuestro sistema y evitar futuras comunicaciones. Le ofrecemos disculpas si este mensaje le genera alguna inconveniencia.</p>
+        <p>{direccion} | {nombre_empresa} - Comprometidos con su satisfacción</p>
+    </div>
+</body>
+</html>
