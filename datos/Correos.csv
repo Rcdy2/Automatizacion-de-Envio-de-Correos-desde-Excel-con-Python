@@ -1,0 +1,11 @@
+ID;Nombre;Email;Empresa;Monto;Dias_Mora;Fecha_Vencimiento;Asunto;Tipo;Adjunto
+101;Carlos Rodriguez;roccacortezdaynna@gmail.com;Inversiones del Norte;1250000;15;15/02/2026;Vencimiento factura No. F2026-015;Recordatorio;factura_F2026-015.pdf
+102;Maria Gonzalez;akaneuwu1705@gmail.com;Corporacion ABC;850000;21;10/02/2026;Recordatorio de pago - Marzo 2026;Recordatorio;estado_cuenta_MG0326.pdf
+103;Juan Perez;akaneuwu1705@gmail.com;Servicios Ltda.;2300000;32;30/01/2026;URGENTE - Aviso de corte de servicio;AvisoFinal;notificacion_corte_SP-2304.pdf
+104;Ana Martinez;ana.m@distribuidorargh.com;Distribuidora RGH;3420000;18;20/02/2026;Pago de factura No. 4567-23;Recordatorio;factura_4567-23.pdf
+105;Luis Torres;luis.t@consultoresgf.com;Consultores GF;975000;5;28/02/2026;Honorarios profesionales Febrero 2026;Recordatorio;contrato_CT-2026-08.pdf
+106;Diana Restrepo;d.restrepo@tecnologiasmt.com;Tecnologias MT;2100000;12;18/02/2026;Mantenimiento de equipos - Factura MT-892;Recordatorio;orden_servicio_MT-892.pdf
+107;Pedro Sanchez;p.sanchez@constructoracv.com;Constructora CV;5600000;25;5/02/2026;Pago parcial de obra civil;Recordatorio;contrato_obra_CV-2025-112.pdf
+108;Laura Jimenez;l.jimenez@saludintegral.com;Salud Integral EPS;320000;45;15/01/2026;Aporte a seguridad social febrero;Recordatorio;liquidacion_aportes_LJ0226.pdf
+109;Andres Lopez;a.lopez@comercializadoradp.com;Comercializadora DP;890000;8;22/02/2026;Facturacion mensual - Marzo;Recordatorio;factura_DP-2026-03-001.pdf
+110;Carolina Mesa;c.mesa@transportesfm.com;Transportes FM;4300000;60;30/12/2025;URGENTE - Flete de mercancia No. FL-3344;AvisoFinal;guia_transporte_FL-3344.pdf
