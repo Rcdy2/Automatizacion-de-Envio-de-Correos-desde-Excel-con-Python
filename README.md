@@ -63,3 +63,7 @@ Una persona del área abre el Excel, filtra el primer registro, copia los datos,
 | `adjuntos/` | PDFs u otros archivos a adjuntar. |
 | `icon/` | Logo de la empresa para incrustar en el cuerpo del correo. |
 | `logs_auditoria/` | Archivos de log con registro detallado de cada envío realizado para auditoria. |
+
+
+## Diagrama de Secuencia (Interacción entre componentes)
+![](iconos_repo/secuencias.png)
