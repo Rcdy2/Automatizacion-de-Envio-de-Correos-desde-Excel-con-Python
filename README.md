@@ -23,13 +23,25 @@ Una persona del área abre el Excel, filtra el primer registro, copia los datos,
 - El proceso depende del personal del área: si se enferma o renuncia, se detiene generando retrasos
 
 # Proceso actual (AS-IS)
-![](iconos_repo/AsIs.png)
+<img src="iconos repo/To Be.png" width="200">
 
 **Problemas identificados:**
 - Proceso manual y repetitivo que consume horas de trabajo
 - Alto riesgo de error humano en cada paso
 - Sin registro centralizado ni trazabilidad
 - Difícil de escalar cuando el volumen crece
+
+# Proceso automatizado (TO-BE)
+
+![](iconos_repo/ToBe.png)
+
+**Beneficios obtenidos:**
+- Registros procesados automaticamente en segundos
+- Cero errores de personalización o adjuntos
+- Auditoría completa 
+- El proceso no depende de una persona específica
+- Escalable a cualquier volumen
+
 
 ![](iconos_repo/DiagramaComponentes.png)
 ![](iconos_repo/Automatizacion.png)
