@@ -7,7 +7,7 @@ Este proyecto consiste en un script desarrollado en Python que automatiza el pro
 - Seleccionar y personalizar la plantilla HTML según el tipo de comunicación
 - Adjuntar documentos específicos para cada destinatario
 - Enviar correos y registrar cada acción en logs para auditoría
-\n
+
 **Capacidad del sistema:**
 - Cuentas personales (Gmail, Hotmail): hasta 500 envíos diarios
 - Cuentas corporativas: hasta 2000 envíos diarios
@@ -17,10 +17,10 @@ En la mayoría de empresas, la información operativa se gestiona en Excel. Vent
 Una persona del área abre el Excel, filtra el primer registro, copia los datos, abre su correo, redacta un mensaje, busca el archivo adjunto en las carpetas del servidor, lo adjunta, envía, y marca en el Excel que ya realizó el envío. Luego repite para el siguiente registro.
 
 **El problema concreto:**
-Tomar 5-10 minutos por registro significa que para 100 registros se pierde casi un día completo de trabajo
-Los errores son frecuentes: adjuntar archivo equivocado, copiar mal un nombre, omitir destinatarios
-No hay trazabilidad: si en el futuro preguntan por un envío específico, no hay forma de verificarlo directamente
-El proceso depende del personal del área: si se enferma o renuncia, se detiene generando retrasos
+- Tomar 5-10 minutos por registro significa que para 100 registros se pierde casi un día completo de trabajo
+- Los errores son frecuentes: adjuntar archivo equivocado, copiar mal un nombre, omitir destinatarios
+- No hay trazabilidad: si en el futuro preguntan por un envío específico, no hay forma de verificarlo directamente
+- El proceso depende del personal del área: si se enferma o renuncia, se detiene generando retrasos
 
 #Proceso actual (AS-IS)
 ![](iconos_repo/AsIs.png)
