@@ -49,9 +49,7 @@ Una persona del área abre el Excel, filtra el primer registro, copia los datos,
 ## Arquitectura del Sistema (Diagrama de Componentes)
 ![](iconos_repo/DiagramaComponentes.png)
 
-## **Componentes**
-## Estructura del Proyecto
-
+## **Componentes - Estructura del Proyecto**
 | Modulo / Archivo | Responsabilidad |
 | :--- | :--- |
 | `main.py` | **Orquestador principal**: lee CSV, itera sobre registros y coordina el flujo. |
