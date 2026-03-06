@@ -41,22 +41,26 @@ Una persona del área abre el Excel, filtra el primer registro, copia los datos,
 - Auditoría completa 
 - El proceso no depende de una persona específica
 - Escalable a cualquier volumen
-  
+
+## Comparacion de mejoras en los procesos
 ![](iconos_repo/Automatizacion.png)
 
 
 ## Arquitectura del Sistema (Diagrama de Componentes)
 ![](iconos_repo/DiagramaComponentes.png)
 **Componentes**
-Módulo/Archivo	Responsabilidad
-main.py	Orquestador principal: lee CSV, itera sobre registros, coordina el flujo.
-data_processor.py	Carga el CSV con pandas, prepara diccionario de datos por cliente.
-email_sender.py	Construye el mensaje MIME (HTML + adjuntos + imagen incrustada) y envía vía SMTP.
-logger_config.py	Configura logging para archivo y consola.
-config/empresa.py	Datos fijos de la empresa (nombre, teléfono, dirección) – fácilmente editables.
-config/credentials.py	Credenciales SMTP (no se suben a Git).
-datos/	Contiene el archivo CSV de entrada (exportado desde Excel).
-plantillas/	Archivos HTML con el diseño de los correos (con variables {{...}}).
-adjuntos/	PDFs u otros archivos a adjuntar (nombres coinciden con el CSV).
-icon/	Logo de la empresa para incrustar en el cuerpo del correo.
-logs_auditoria/	Archivos de log con registro detallado de cada envío.
+## Estructura del Proyecto
+
+| Modulo / Archivo | Responsabilidad |
+| :--- | :--- |
+| `main.py` | **Orquestador principal**: lee CSV, itera sobre registros y coordina el flujo. |
+| `data_processor.py` | Carga el CSV con `pandas`, prepara diccionario de datos por cliente. |
+| `email_sender.py` | Construye el mensaje MIME (HTML + adjuntos) y envía vía SMTP. |
+| `logger_config.py` | Configura los logs `logging` para guardarlos en archivo y salida por consola asegurando persistencia. |
+| `config/empresa.py` | Datos de la empresa (nombre, teléfono, dirección, etc). |
+| `config/credentials.py` | Credenciales SMTP. |
+| `datos/` | Contiene el archivo CSV de datos (exportado desde Excel). |
+| `plantillas/` | Archivos HTML con el diseño para los diferentes tipos de correos definiendo varibales de entrada |
+| `adjuntos/` | PDFs u otros archivos a adjuntar. |
+| `icon/` | Logo de la empresa para incrustar en el cuerpo del correo. |
+| `logs_auditoria/` | Archivos de log con registro detallado de cada envío realizado para auditoria. |
