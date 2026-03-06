@@ -24,6 +24,14 @@ El sistema utiliza plantillas HTML diseñadas que se personalizan automáticamen
 
 Ambas plantillas son completamente personalizables, se puede modificar el texto, los colores, la estructura y las variables según los requerimientos de cada empresa o área (las plantillas realizadas son de ejemplos).
 
+# Registro de Auditoría
+El sistema genera automáticamente un archivo de log (automatizacion.log) que registra cada acción durante la ejecución. Este registro permite:
+- Verificar qué correos se enviaron, a quién y cuándo
+- Identificar fallos técnicos (conexión, archivos faltantes, errores de autenticación)
+- Auditar el proceso completo en caso de reclamos o disputas
+- Tener evidencia respaldatoria para cumplimiento normativo
+Cada entrada en el log incluye: fecha y hora exacta del evento, nivel del evento (INFO, WARNING, ERROR), y una descripción detallada de lo ocurrido (inicio del proceso, envío exitoso a cada destinatario, archivos adjuntados, errores encontrados, resumen final).
+![](iconos_repo/logs.png)
 
 ## Problemática
 En la mayoría de empresas, la información operativa se gestiona en Excel. Ventas tiene un Excel con clientes, RH tiene un Excel con empleados, Logística tiene un Excel con proveedores. Cuando necesitan enviar comunicaciones masivas (cobranzas, boletas, notificaciones, promociones), el proceso es siempre el mismo y es manual:
