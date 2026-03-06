@@ -75,7 +75,7 @@ def main():
             resultados['fallidos'] += 1
     
     # Auditoria final resumen del dia
-    logger.info("=" * 50)
+    logger.info("-" * 50)
     logger.info("RESUMEN FINAL")
     logger.info(f"Envio de Correos Exitosos: {resultados['exitosos']}")
     logger.info(f"Envio de Correos Fallidos: {resultados['fallidos']}")
