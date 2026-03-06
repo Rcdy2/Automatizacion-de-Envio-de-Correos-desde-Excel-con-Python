@@ -13,7 +13,13 @@ Este proyecto consiste en un script desarrollado en Python que automatiza el pro
 - Cuentas personales (Gmail, Hotmail): hasta 500 envíos diarios
 - Cuentas corporativas: hasta 2000 envíos diarios
 
-# Tipos de correos generados
+## Estructura de datos de entrada
+
+El sistema está diseñado para trabajar con archivos CSV exportados desde Excel. La estructura es simple y personalizable según la necesidad:
+![](iconos_repo/csv.png)
+Esta estructura puede adaptarse a cualquier necesidad. Solo se requiere que el CSV contenga las columnas necesarias y que los archivos adjuntos estén en la carpeta correspondiente con los nombres indicados.
+
+## Tipos de correos generados
 El sistema utiliza plantillas HTML diseñadas que se personalizan automáticamente con los datos de cada destinatario. Dependiendo de la necesidad de comunicación, se pueden configurar diferentes tipos de mensajes en este caso se aplicaron dos tipos de correos:
 
 - **Correo tipo Aviso Final:** Diseñado para comunicaciones urgentes o de última instancia. Utiliza una paleta de colores en tonos rojos que transmite formalidad y urgencia, incluye advertencias explícitas y destaca visualmente los montos y fechas críticas.
