@@ -2,6 +2,7 @@
 
 ## Descripción General
 Este proyecto consiste en un script desarrollado en Python que automatiza el proceso de envío masivo de correos electrónicos personalizados a partir de datos contenidos en archivos CSV exportados desde Excel. La herramienta permite leer registros, personalizar plantillas HTML con información específica de cada destinatario, adjuntar documentos (PDF, imágenes, etc.) y enviar los correos de forma automatizada, generando además un registro de auditoría detallado de cada acción.
+
 **Las 4 tareas principales del sistema:**
 - Leer y procesar datos desde archivo CSV (exportado de Excel)
 - Seleccionar y personalizar la plantilla HTML según el tipo de comunicación
