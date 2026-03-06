@@ -1,26 +1,35 @@
 # Automatizacion-de-Envio-de-Correos-desde-Excel-con-Python
 
 ## Descripción General
-Este script automatiza el proceso de envío masivo de correos electrónicos desarrollado en Python, que se integra directamente con archivos Excel (CSV). La herramienta permite leer datos desde un archivo CSV (exportado desde Excel), personalizar plantillas HTML con la información específica de cada destinatario segun el tipo de correos que se maneje (Recordatorios, avisos,etc), adjuntar documentos digitales (facturas, reportes, contratos, etc.) y enviar los correos de forma automatizada, registrando detalladamente cada acción en un archivo para su auditoría.
-El sistema realiza cuatro tareas principales:
-1. Leer y procesar datos desde archivos Excel (CSV)
-2. Seleccionar y personalizar plantillas HTML según el tipo de correo
-3. Adjuntar documentos específicos para cada destinatario
-4. Enviar correos electrónicos y registrar cada acción en logs de auditoría
+Este proyecto consiste en un script desarrollado en Python que automatiza el proceso de envío masivo de correos electrónicos personalizados a partir de datos contenidos en archivos CSV exportados desde Excel. La herramienta permite leer registros, personalizar plantillas HTML con información específica de cada destinatario, adjuntar documentos (PDF, imágenes, etc.) y enviar los correos de forma automatizada, generando además un registro de auditoría detallado de cada acción.
+**Las 4 tareas principales del sistema:**
+- Leer y procesar datos desde archivo CSV (exportado de Excel)
+- Seleccionar y personalizar la plantilla HTML según el tipo de comunicación
+- Adjuntar documentos específicos para cada destinatario
+- Enviar correos y registrar cada acción en logs para auditoría
+
+**Capacidad del sistema:**
+- Cuentas personales (Gmail, Hotmail): hasta 500 envíos diarios
+- Cuentas corporativas: hasta 2000 envíos diarios
 
 ## Problemática que Resuelve
-Las empresas manejan diariamente grandes volúmenes de información en archivos Excel: listados de clientes, reportes de ventas, órdenes de compra, facturación, nóminas de empleados, tickets de soporte, entre muchos otros. Esta información, almacenada en formato Excel, requiere frecuentemente ser comunicada por correo electrónico a diferentes destinatarios de manera personalizada.
-Un colaborador debe abrir el archivo Excel, acceder al correo electrónico, redactar o copiar una plantilla, buscar manualmente los datos de cada destinatario, localizar el archivo adjunto correspondiente en las carpetas del sistema, verificar la información y finalmente enviar. Este ciclo se repite tantas veces como destinatarios existan.
+En la mayoría de empresas, la información operativa se gestiona en Excel. Ventas tiene un Excel con clientes, RH tiene un Excel con empleados, Logística tiene un Excel con proveedores. Cuando necesitan enviar comunicaciones masivas (cobranzas, boletas, notificaciones, promociones), el proceso es siempre el mismo y es manual:
+Una persona del área abre el Excel, filtra el primer registro, copia los datos, abre su correo, redacta un mensaje, busca el archivo adjunto en las carpetas del servidor, lo adjunta, envía, y marca en el Excel que ya realizó el envío. Luego repite para el siguiente registro.
 
-El proceso manual tradicional presenta las siguientes limitaciones:
-- Pérdida de tiempo operativo: Para un lote de 100 correos, este proceso manual puede consumir entre 3 y 8 horas de trabajo continuo, representando un costo operativo significativo y restando tiempo a funciones de mayor valor agregado.
-- Alta propensión a errores humanos: Tras repetitir una tarea aumenta la probabilidad de equivocaciones como:
-  - Enviar información a destinatarios incorrectos
-  - Adjuntar archivos que no corresponden al cliente
-  - Omitir destinatarios o duplicar envíos
-  - Falta de reporte de envios
-- Falta de trazabilidad: No existe un registro automático y confiable de qué correos fueron enviados, a quién, cuándo y con qué resultado, lo que dificulta auditorías internas, la resolución de posibles reclamos y el análisis de gestión.
-- Escalabilidad limitada: El modelo manual no permite aumentar el volumen de comunicaciones sin incrementar proporcionalmente el personal o las horas dedicadas a esta tarea, restringiendo el crecimiento operativo.
+**El problema concreto:**
+Tomar 5-10 minutos por registro significa que para 100 registros se pierde casi un día completo de trabajo
+Los errores son frecuentes: adjuntar archivo equivocado, copiar mal un nombre, omitir destinatarios
+No hay trazabilidad: si en el futuro preguntan por un envío específico, no hay forma de verificarlo directamente
+El proceso depende del personal del área: si se enferma o renuncia, se detiene generando retrasos
+
+#Proceso actual (AS-IS)
+![](iconos_repo/AsIs.png)
+
+**Problemas identificados:**
+- Proceso manual y repetitivo que consume horas de trabajo
+- Alto riesgo de error humano en cada paso
+- Sin registro centralizado ni trazabilidad
+- Difícil de escalar cuando el volumen crece
 
 ![](iconos_repo/DiagramaComponentes.png)
 ![](iconos_repo/Automatizacion.png)
