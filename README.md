@@ -23,7 +23,7 @@ Una persona del área abre el Excel, filtra el primer registro, copia los datos,
 - El proceso depende del personal del área: si se enferma o renuncia, se detiene generando retrasos
 
 # Proceso actual (AS-IS)
-<img src="iconos_repo/ToBe.png" width="600">
+<img src="iconos_repo/ToBe.png" width="900">
 
 **Problemas identificados:**
 - Proceso manual y repetitivo que consume horas de trabajo
