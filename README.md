@@ -46,7 +46,11 @@ Una persona del área abre el Excel, filtra el primer registro, copia los datos,
 ![](iconos_repo/Automatizacion.png)
 
 
-## Arquitectura del Sistema (Diagrama de Componentes)
+## Arquitectura del Sistema 
+1. Arquitectura en Capas
+![](iconos_repo/Arquitecturadelsistema.png)
+
+3. Diagrama de Componentes
 ![](iconos_repo/DiagramaComponentes.png)
 
 ## **Componentes - Estructura del Proyecto**
