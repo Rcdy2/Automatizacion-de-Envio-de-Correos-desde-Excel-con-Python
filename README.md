@@ -13,6 +13,8 @@ Este proyecto consiste en un script desarrollado en Python que automatiza el pro
 - Cuentas personales (Gmail, Hotmail): hasta 500 envíos diarios
 - Cuentas corporativas: hasta 2000 envíos diarios
 
+![](iconos_repo/correoAvisoFinal.png)
+![](iconos_repo/correoRecordatorio.png)
 ## Problemática
 En la mayoría de empresas, la información operativa se gestiona en Excel. Ventas tiene un Excel con clientes, RH tiene un Excel con empleados, Logística tiene un Excel con proveedores. Cuando necesitan enviar comunicaciones masivas (cobranzas, boletas, notificaciones, promociones), el proceso es siempre el mismo y es manual:
 Una persona del área abre el Excel, filtra el primer registro, copia los datos, abre su correo, redacta un mensaje, busca el archivo adjunto en las carpetas del servidor, lo adjunta, envía, y marca en el Excel que ya realizó el envío. Luego repite para el siguiente registro.
