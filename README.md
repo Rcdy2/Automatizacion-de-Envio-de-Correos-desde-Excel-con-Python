@@ -23,7 +23,7 @@ Una persona del área abre el Excel, filtra el primer registro, copia los datos,
 - No hay trazabilidad: si en el futuro preguntan por un envío específico, no hay forma de verificarlo directamente
 - El proceso depende del personal del área: si se enferma o renuncia, se detiene generando retrasos
 
-# Proceso actual (AS-IS)
+## Proceso actual (AS-IS)
 ![](iconos_repo/AsIs.png)
 
 **Problemas identificados:**
@@ -32,8 +32,7 @@ Una persona del área abre el Excel, filtra el primer registro, copia los datos,
 - Sin registro centralizado ni trazabilidad
 - Difícil de escalar cuando el volumen crece
 
-# Proceso automatizado (TO-BE)
-
+## Proceso automatizado (TO-BE)
 ![](iconos_repo/ToBe.png)
 
 **Beneficios obtenidos:**
@@ -42,7 +41,22 @@ Una persona del área abre el Excel, filtra el primer registro, copia los datos,
 - Auditoría completa 
 - El proceso no depende de una persona específica
 - Escalable a cualquier volumen
-
-
-![](iconos_repo/DiagramaComponentes.png)
+  
 ![](iconos_repo/Automatizacion.png)
+
+
+## Arquitectura del Sistema (Diagrama de Componentes)
+![](iconos_repo/DiagramaComponentes.png)
+**Componentes**
+Módulo/Archivo	Responsabilidad
+main.py	Orquestador principal: lee CSV, itera sobre registros, coordina el flujo.
+data_processor.py	Carga el CSV con pandas, prepara diccionario de datos por cliente.
+email_sender.py	Construye el mensaje MIME (HTML + adjuntos + imagen incrustada) y envía vía SMTP.
+logger_config.py	Configura logging para archivo y consola.
+config/empresa.py	Datos fijos de la empresa (nombre, teléfono, dirección) – fácilmente editables.
+config/credentials.py	Credenciales SMTP (no se suben a Git).
+datos/	Contiene el archivo CSV de entrada (exportado desde Excel).
+plantillas/	Archivos HTML con el diseño de los correos (con variables {{...}}).
+adjuntos/	PDFs u otros archivos a adjuntar (nombres coinciden con el CSV).
+icon/	Logo de la empresa para incrustar en el cuerpo del correo.
+logs_auditoria/	Archivos de log con registro detallado de cada envío.
