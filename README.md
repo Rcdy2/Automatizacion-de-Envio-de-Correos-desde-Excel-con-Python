@@ -7,7 +7,7 @@ Este proyecto consiste en un script desarrollado en Python que automatiza el pro
 - Seleccionar y personalizar la plantilla HTML según el tipo de comunicación
 - Adjuntar documentos específicos para cada destinatario
 - Enviar correos y registrar cada acción en logs para auditoría
-
+\n
 **Capacidad del sistema:**
 - Cuentas personales (Gmail, Hotmail): hasta 500 envíos diarios
 - Cuentas corporativas: hasta 2000 envíos diarios
