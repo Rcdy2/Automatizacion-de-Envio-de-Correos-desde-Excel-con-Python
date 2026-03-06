@@ -48,7 +48,9 @@ Una persona del área abre el Excel, filtra el primer registro, copia los datos,
 
 ## Arquitectura del Sistema 
 **1. Arquitectura en Capas**
+
 ![](iconos_repo/Arquitecturadelsistema.png)
+
 
 **2. Diagrama de Componentes**
 ![](iconos_repo/DiagramaComponentes.png)
